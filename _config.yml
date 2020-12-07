@@ -3,10 +3,11 @@ title: 姜佳伟の博客
 SEOTitle: 姜佳伟の博客
 header-img: img/root/home-bg-YN.jpg
 email:  jjwqq@buaa.edu.cn
-description: "介绍描述写点啥呢。。。。"
+description: "姜佳伟的个人博客"
 keyword: "姜佳伟, 姜佳伟博客, 深度学习"
 url: "https://aptx1231.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+excerpt_separator: ""
 
 # Publish posts or collection documents with a future date.
 future: false
@@ -15,7 +16,7 @@ future: false
 RSS: false
 #zhihu_username: 
 github_username: aptx1231
-#jianshu_username: f351700402cd
+#jianshu_username: 
 csdn_username: aptx1231
 #linkedin_username:
 #weibo_username:
@@ -99,6 +100,10 @@ friends: [
 {
   title: "BUAA_VPN",
   href: "https://e.buaa.edu.cn/"
+},
+{
+  HomePage: "HomePage",
+  href: "http://aptx1231.xyz/"
 }
 ]
 

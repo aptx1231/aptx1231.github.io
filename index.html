@@ -33,17 +33,54 @@ description: ""
 {% endfor %}
 
 <!-- Pager -->
-{% if paginator.total_pages > 1 %}
+<!-- {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Previous Page</a>
     </li>
     {% endif %}
+    
     {% if paginator.next_page %}
     <li class="next">
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next Page &rarr;</a>
     </li>
     {% endif %}
 </ul>
+{% endif %} -->
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+  {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Previous Page</a>
+    </li>
+  {% else %}
+    <li class="previous">
+        <a href="">&larr; Previous Page</a>
+    </li>
+  {% endif %}
+
+    <!-- {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <em>{{ page }}</em>
+        {% elsif page == 1 %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+    {% endfor %} -->
+
+  {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next Page &rarr;</a>
+    </li>
+  {% else %}
+    <li class="next">
+        <a href="">Next Page &rarr;</a>
+    </li>
+  {% endif %}
+</ul>
 {% endif %}
+
+<p style="display: flex; justify-content: center;">Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>

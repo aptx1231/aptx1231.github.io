@@ -35,12 +35,12 @@
 
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
-    <!-- Web App Manifest -->
+    <!-- Web App Manifest PWA技术 Web可以安装成App使用-->
     <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ site.baseurl }}/img/root/favicon.ico">
-
+ 
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 

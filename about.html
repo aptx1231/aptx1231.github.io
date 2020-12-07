@@ -8,11 +8,14 @@ multilingual: true
 <!-- canvas-nest.min.js -->
 <script type="text/javascript" color="255,0,255" opacity='0.5' zIndex="-2" count="99" src="../../../../js/canvas-nest.min.js"></script>
 
+<!-- Multi-Lingual -->
+{% if page.multilingual %}
 <!-- Language Selector -->
 <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英文 English </option>
 </select>
+{% endif %}
 
 <!-- Chinese Version -->
 <div class="zh post-container">
