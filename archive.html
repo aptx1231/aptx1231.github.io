@@ -21,7 +21,7 @@ header-img: "img/bg/archive-bg.jpg"
 					Show All
 					<sup>{{site.posts.size}}</sup>
 				</a>
-
+<!-- 
 				{% capture tags %}
 				{% for tag in site.tags %}
 				<a data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}"
@@ -33,7 +33,25 @@ header-img: "img/bg/archive-bg.jpg"
 				</a>
 				{% endfor %}
 				{% endcapture %}
-        {{ tags | split:'</a>' | sort | join:'</a>' }}
+				{{ tags | split:'</a>' | sort | join:'</a>' }} 
+-->
+				{% assign max_tag_count = 0 %}
+				{% for tag in site.tags %}
+					{% if tag[1].size > max_tag_count %}
+						{% assign max_tag_count = tag[1].size %}
+					{% endif %}
+				{% endfor %}
+				{% for i in (1..max_tag_count) reversed %}
+					{% for tag in site.tags %}
+						{% if tag[1].size == i %}
+						<a data-encode="{{ tag[0] | strip | url_encode }}" title="{{ tag[0] }}" 
+						class="tag-button" rel="{{ tag[1].size }}" >
+							{{ tag[0] }}
+							<sup>{{tag[1].size}}</sup>
+						</a>
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
 			</div>
 
             <!-- Article List -->
