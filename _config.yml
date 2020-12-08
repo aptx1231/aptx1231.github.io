@@ -1,7 +1,7 @@
 # Site settings
 title: 姜佳伟の博客
 SEOTitle: 姜佳伟の博客
-header-img: img/root/home-bg-YN.jpg
+header-img: img/bg/home-bg.jpg
 email:  jjwqq@buaa.edu.cn
 description: "姜佳伟的个人博客"
 keyword: "姜佳伟, 姜佳伟博客, 深度学习"
@@ -74,7 +74,7 @@ simple_jekyll_search:
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "这一世的张扬"
-sidebar-avatar: /img/about/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/bg/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
