@@ -4,7 +4,7 @@ SEOTitle: aptx1231の博客
 header-img: img/bg/home-bg.jpg
 email:  jwjiang@buaa.edu.cn
 description: "aptx1231的个人博客"
-keyword: "aptx1231, aptx1231博客, 深度学习"
+keyword: "aptx1231, aptx1231博客, 深度学习, Jiawei Jiang"
 url: "https://aptx1231.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 excerpt_separator: ""
@@ -56,7 +56,7 @@ kramdown:
 # ---------------- #
 simple_jekyll_search:
   # 是否支持全文搜索
-  fulltext: false
+  fulltext: true
   # 最多显示多少条搜索结果
   limit: 10
 
