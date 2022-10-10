@@ -1,4 +1,4 @@
-## Hi, welcome to my profile 👋
+## Hi, welcome to my profile 👋![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=aptx1231-web.visitor-badge)
 
 - 🎓 I am Jiawei Jiang, a graduate student at the School of Computer Science and Engineering, [Beihang University](http://www.buaa.edu.cn/), China (UTC+8).
 - 🌱 My research interests include Spatio-Temporal Data Mining, Graph Neural Networks, and Representation Learning.
